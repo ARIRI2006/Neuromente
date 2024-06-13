@@ -12,11 +12,12 @@
     <main>
         <login>
             <h2>Seja bem vindo</h2>
-            <h3>Não tem uma conta, <span>Cadastra-se</span></h3>
+            <h3>Não tem uma conta, <a href="cadastro.html" title="cadastro">Cadastra-se</a></h3>
+            
             <form>
-            <p>Email:<input type="Email" placeholder="E-mail"></p>
-            <p>Senha:<input type="text" placeholder="Senha"></p>
-                <input type="submit" value="Login">
+            <p>Email:<input type="email" id="email" placeholder="E-mail"></p>
+            <p>Senha:<input type="password" id="password" placeholder="Senha"></p>
+                <input type="submit" id="button-avancar">
             </form>
         </login>
 
@@ -24,6 +25,6 @@
             <img src="img/rosto.png" alt="imagem">
         </article>
     </main>
-    
+    <script src="main.js"></script>
 </body>
 </html>

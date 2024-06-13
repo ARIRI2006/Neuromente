@@ -22,3 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const button = document.querySelector(".btn-default")
+
+button.addEventListener('click', function() {
+    window.location.href = 'login.html'
+})

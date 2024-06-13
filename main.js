@@ -1,21 +1,25 @@
-let button = document.getElementById("handleSubmit");
+let button = document.querySelector("#button-avancar");
 
-button.onclick = async function() {
-  let title = document.getElementById("title").value;
-  let description = document.getElementById("description").value;
-  let data = {title,description};
+button.onclick = async function(event) {
+  event.preventDefault()
 
-  const response = await fetch('http://localhost:3003/api/store/task', {
+  let email = document.querySelector("#email").value;
+  let password = document.querySelector("#password").value;
+
+  let data = {email, password};
+
+  const response = await fetch('http://localhost:3003/api/store/logintask', {
     method: "POST",
     headers: {"Content-type": "application/json;charset=UTF-8"},
     body: JSON.stringify(data)
   });
-
+  
   let content = await response.json();
-
-  if(content.success){
-    alert("Sucesso");
+  
+  if (content.success) {
+    window.location.href = '../index.html'
+    alert(content.message)
   } else {
-    alert("Não");
-  }
+    alert(content.message); 
+  }  
 }
