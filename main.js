@@ -18,8 +18,10 @@ button.onclick = async function(event) {
   
   if (content.success) {
     window.location.href = '../index.html'
+    localStorage.setItem('@conta_conectada', JSON.stringify(content.data));
     alert(content.message)
   } else {
     alert(content.message); 
   }  
 }
+

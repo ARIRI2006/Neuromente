@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -5,46 +7,90 @@
 }
 
 body{
- background-color: rgb(45, 0, 45);
-}
-
-h1{
-  color: white;
-  font-size: 2rem;
-  padding: 2rem;
-}
-
-.container{
+  background-image: url("../img/back.png");
+  background-size: cover; /* Para cobrir toda a área do body */
+  background-repeat: no-repeat; /* Para não repetir a imagem */
+  background-color: white;
+  height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 4rem;
-  width: 90%;
-
-  button{
-    background-color: rgb(166, 62, 161);
-    color: white;
-    border: none;
-    padding: 1rem;
-    border-radius: 50px;
-  }
+  align-items: center;
+  justify-content: center;
 }
 
-.wrapper{
+main{
   display: flex;
-  gap: 4rem;
-  article{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: clamp(1rem, 2vw, 2rem);
+  border-radius: 3rem;
+  min-width: 350px;
+  width: 35%;
+
+  img{
+    width: clamp(4rem, 7vw, 7rem);
+  }
+  h2{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1rem, 2vw, 2.2rem);
+      padding: 8px;
+  }
+  h3{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.7rem, 1vw, 1.2rem);
+      padding: 0 0 8px;
+  }
+
+
+
+  form{
     display: flex;
     flex-direction: column;
-  }
-  label{
-    color: rgb(166, 62, 161);
-    font-size: 1.5rem;
-  }
-  input{
-    padding: 0.5rem;
-    width: 450px;
-    border-radius: 5px;
-  }
+    width: 90%;
+    margin-top: clamp(1rem, 5vw, 6rem);
+
+    article{
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+
+      label{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: clamp(0.8rem, 1.1vw, 1.3rem);
+        padding: 0 12px 4px;
+    }
+    input{
+        background-color: white;
+        padding: 12px 16px;
+        border: 2px solid #8b10dd;
+        border-radius: 50px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: clamp(0.7rem, 0.9vw, 1rem);
+    }
+    }
+
+    #label{
+
+    }
+    button{
+        background-color: #8b10dd;
+        padding: 16px 16px;
+        border: none;
+        border-radius: 50px;
+        margin-top: 3rem;
+
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: clamp(0.7rem, 0.9vw, 1rem);
+        color: white;
+        cursor: pointer;
+    }
+}
 }

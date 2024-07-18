@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
@@ -10,42 +9,42 @@
 
 header {
     width: 100%;
-    padding: 28px 8%;
+    padding: 2rem 1rem 5rem;
 }
 
 #navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #nav_logo {
     height: 60px;
-    margin: 15px -50px;
     cursor: pointer;
+    margin-right: 10%;
 }
 
 #nav_list {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    gap: 48px;
+    width: 90%;
 }
 
 .nav-item a {
-    text-decoration: none;
     color: #ffffff;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-item a:hover{
-    color: rgb(209, 209, 209);
-}
-
-.nav-item.active a {
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid #ff00f2;
+    color: rgb(219, 129, 231);
+    text-decoration: underline;
 }
 
 #mobile_btn {
@@ -73,17 +72,12 @@ header {
     justify-content: center;
     background-color: #9153ed;
     border-radius: 12px;
-    padding: 10px 30px;
+    padding: 0.8rem 2.6rem;
     font-weight: 600;
     box-shadow: #000000;
     cursor: pointer;
     transition: background-color .3s ease;
-
-    a{
-        text-decoration: none;
-        color: #21081f;
-    }
-
+    color: white;
 }
 
 .btn-default:hover{
@@ -112,47 +106,24 @@ header {
     gap: 28px;
 }
 
-#cta .title {
-    font-size: 1rem;
+#cta h1 {
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
     color: rgb(255, 255, 255);
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     border-bottom: 1px solid white;
     padding-bottom: 28px;
 }
 
-#cta .title span {
+#cta h1 span {
     color: rgb(171, 0, 214);
 
 }
 
-#cta .description {
+#cta p {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 1.3rem;
-}
-
-
-#bottom-content{
-    position: absolute;
-    bottom: -8vh;
-    right: 0;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-
-    img{
-        width: 80%;
-    }
-
-    p{
-        position: absolute;
-        width: 80%;
-        font-size: 1.5rem;
-        color: white;
-        text-align: center;
-        padding: 7rem 1rem 7rem 3rem;
-    }
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
 }
 
 
@@ -169,28 +140,36 @@ header {
 #part2 .container{
     position: absolute;
     top: 1vh;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     background-color: #ffffff;
-    border-radius: 200px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 #part2 .container .article1{
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
 
     h2{
         text-align: center;
-        margin-top: 1.5rem;
+        margin: 1.5rem 0;
         font-weight: 800;
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 1.3vw, 1.4rem);
         color: black;
     }
 
     p{
         text-align: justify;
-        padding: 1rem 5rem;
-        font-size: 1.25rem;
+        font-size: clamp(0.8rem, 1vw, 1.1rem);
+        font-weight: 500;
         color: black;
     }
 }
@@ -198,31 +177,30 @@ header {
 #part2 .container .article2{
     display: flex;
     flex-direction: row;
-    height: 400px;
-    margin-left: 84px;
-
+    justify-content: center;
+    width: 80%;
+    gap: 1rem;
+    margin: auto;
     
 
     img{
-        width: 400px;
+        width: clamp(6rem,20vw,24rem);
+        height: clamp(6rem,20vw,24rem);
     }
 
     h2{
-        height: 40%;
         align-items: center;
         display: flex;
-        padding: 50px;
-        margin-bottom: -80px;
-        
+        font-size: clamp(1rem, 1.3vw, 1.4rem);
+        margin-bottom: 1rem;
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: clamp(0.8rem, 1vw, 1.1rem);
         color: black;
         display: flex;
         align-items: center;
         width: 90%;
-        padding: 50px;
         
     }
 }

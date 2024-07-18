@@ -7,37 +7,35 @@
   <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
+  <main>
+    <img src="img/rosto.png" alt="imagem">
+    <h2>Seja bem vindo</h2>
+    <h3>Já possui uma conta? <a href="login.html" title="cadastro">Faça login</a></h3>
 
-  <h1>SEJA BEM VINDO</h1>
+    <form class="container">
+        <article>
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" placeholder="Nome">
+        </article>
 
-  <form class="container">
-    <section class="wrapper">
-      <article>
-        <label for="name">Nome completo</label>
-        <input type="text" id="name" name="name">
-      </article>
+        <article>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+        </article>
 
-      <article>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-      </article>
-    </section>
+        <article>
+          <label for="password">Criar senha</label>
+          <input type="password" id="password" name="password" placeholder="Senha">
+        </article>
 
-    <section class="wrapper">
-      <article>
-        <label for="password">Criar senha</label>
-        <input type="password" id="password" name="password">
-      </article>
+        <article>
+          <label for="email">Confirmar senha</label>
+          <input type="password" id="confirm" name="confirm" placeholder="Confirmar senha">
+        </article>
 
-      <article>
-        <label for="email">Confirmar senha</label>
-        <input type="password" id="confirm" name="confirm">
-      </article>
-    </section>
-
-    <button id="button-avancar">Cadastrar</button>
-  </form>
-
+      <button id="button-avancar">Cadastrar</button>
+    </form>
+  </main>
 
 </body>
 <script src='./cadastro.js'></script>
