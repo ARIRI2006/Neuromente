@@ -8,7 +8,7 @@ button.onclick = async function(event) {
 
   let data = {email, password};
 
-  const response = await fetch('http://localhost:3003/api/store/logintask', {
+  const response = await fetch('http://localhost:3008/api/store/logintask', {
     method: "POST",
     headers: {"Content-type": "application/json;charset=UTF-8"},
     body: JSON.stringify(data)
@@ -17,7 +17,7 @@ button.onclick = async function(event) {
   let content = await response.json();
   
   if (content.success) {
-    window.location.href = '../index.html'
+    window.location.href = './home.html'
     localStorage.setItem('@conta_conectada', JSON.stringify(content.data));
     alert(content.message)
   } else {

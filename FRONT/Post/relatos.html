@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="relatos.css">
+    <title>Relatos</title>
+</head>
+<body>
+    <section id="parte1">
+        <header>
+            <nav id="navbar">
+                <ul id="nav_list">
+                    <img src="/IMG/Logo (1).png" id="nav_logo" alt="Logo NeuroMente">
+                    <li class="nav-item"><a href="#info">Alzheimer, o que é?</a></li>
+                    <li class="nav-item"><a id="selected" href="Relatos.html">Relatos</a></li>
+                    <li class="nav-item"><a href="#sobrenós">Sobre nós</a></li>
+                    <button class="btn-default">Faça Login</button>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Faça seu relato</h2>
+            <button id="add-relato-btn">+</button>
+            <div id="relato-form-container">
+                <form id="RelatoForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="relato">Relato:</label>
+                    <textarea id="relato" name="relato"></textarea>
+                    <label for="imagem">Imagem:</label>
+                    <input type="file" id="imagem" name="imagem">
+                    <button id="enviar">Postar relato</button>
+                </form>
+            </div>
+
+            <div id="relatos-container">
+                <!-- Aqui vão aparecer os relatos postados -->
+            </div>
+        </main>
+    </section>
+
+    <script src="scriptrelatos.js"></script>
+</body>
+</html>

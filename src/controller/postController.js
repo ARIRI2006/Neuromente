@@ -1,15 +1,15 @@
 const connection = require('../config/db');
 const dotenv = require('dotenv').config();
 
-async function storeTask(request, response) {
+async function storepost(request, response) {
   
   const params = Array(
-    request.body.name,
-    request.body.email,
-    request.body.password
+    request.body.nome,
+    request.body.relato,
+    request.body.imagem
   );
 
-  const query = 'INSERT INTO cadastro(name, email, password) VALUES(?, ?, ?)';
+  const query = 'INSERT INTO post(nome, relato, imagem) VALUES(?, ?, ?)';
 
   connection.query(query, params, (err, results) => {
     if(results) {
@@ -17,15 +17,16 @@ async function storeTask(request, response) {
         .status(201)
         .json({
           success: true,
-          message: 'Conta criada com sucesso!',
+          message: 'Relato postado com sucesso!',
           data: results
         })
     } else {
+      console.log(query, params, results)
       response
       .status(400)
       .json({
         success: false,
-        message: 'Dados inválidos',
+        message: 'Erro',
         data: err
       })
     }
@@ -33,5 +34,5 @@ async function storeTask(request, response) {
 }
 
 module.exports = {
-  storeTask
+  storepost
 }

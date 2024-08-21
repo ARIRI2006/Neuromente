@@ -29,7 +29,7 @@ button.onclick = async function(event) {
 
   let data = {name, email, password: passwordValue};
 
-  const response = await fetch('http://localhost:3003/api/store/task', {
+  const response = await fetch('http://localhost:3008/api/store/task', {
     method: "POST",
     headers: {"Content-type": "application/json;charset=UTF-8"},
     body: JSON.stringify(data)

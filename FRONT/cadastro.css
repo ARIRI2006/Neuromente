@@ -75,10 +75,6 @@ main{
         font-size: clamp(0.7rem, 0.9vw, 1rem);
     }
     }
-
-    #label{
-
-    }
     button{
         background-color: #8b10dd;
         padding: 16px 16px;
