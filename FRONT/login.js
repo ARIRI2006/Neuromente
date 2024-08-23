@@ -24,4 +24,3 @@ button.onclick = async function(event) {
     alert(content.message); 
   }  
 }
-

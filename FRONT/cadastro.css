@@ -7,7 +7,7 @@
 }
 
 body{
-  background-image: url("../img/back.png");
+  background-image: url("/img/fundo.jpg");
   background-size: cover; /* Para cobrir toda a área do body */
   background-repeat: no-repeat; /* Para não repetir a imagem */
   background-color: white;

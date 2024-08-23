@@ -20,24 +20,23 @@
             </nav>
         </header>
 
-        <main>
-            <h2>Faça seu relato</h2>
-            <button id="add-relato-btn">+</button>
+        <main class="get-relato" id="postContainer">
+            
+        </main>
+        <button id="loadMoreButton">Ler mais</button>
+        
+
+        <main class="add-relato">
             <div id="relato-form-container">
                 <form id="RelatoForm">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome">
                     <label for="relato">Relato:</label>
                     <textarea id="relato" name="relato"></textarea>
-                    <label for="imagem">Imagem:</label>
-                    <input type="file" id="imagem" name="imagem">
                     <button id="enviar">Postar relato</button>
                 </form>
             </div>
-
-            <div id="relatos-container">
-                <!-- Aqui vão aparecer os relatos postados -->
-            </div>
+            <button id="add-relato-btn">Adicionar Relato +</button>
         </main>
     </section>
 

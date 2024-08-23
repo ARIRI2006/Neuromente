@@ -42,7 +42,7 @@ header {
 }
 
 .nav-item a:hover {
-    color: rgb(219, 129, 231);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
@@ -74,44 +74,50 @@ header {
     background-color: #be96f9;
 }
 
-main {
+.get-relato{
+    background-color: white;
+    color: #000000;
+    margin-left: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    gap: 1rem;
+}
+
+.add-relato{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #add-relato-btn {
-    background-color: #4CAF50;
+    background-color: #9153ed;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    border-radius: 99rem;
+    padding: 10px 17px;
     font-size: 24px;
     cursor: pointer;
 }
 
 #add-relato-btn:hover {
-    background-color: #3e8e41;
+    background-color: #be96f9;
 }
 
 #relato-form-container {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    height: 500px;
     overflow-y: auto;
 }
 
 #relato-form-container.show {
-    display: block;
+    display: flex
 }
 
 #RelatoForm {
@@ -197,3 +203,7 @@ main {
     margin-bottom: 20px;
 }
 
+#selected{
+    border-bottom: 1px solid white;
+    padding: 2px;
+}

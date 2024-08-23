@@ -55,7 +55,6 @@ header {
     display: none;
 }
 
-
 #part1 {
     background-image: url("../img/fundo.jpg");
     background-size: cover; /* Para cobrir toda a área do body */
@@ -84,6 +83,21 @@ header {
     background-color: #be96f9;
 }
 
+.olá{
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a0c25;
+    border-radius: 12px;
+    padding: 0.8rem 2.6rem;
+    font-weight: 600;
+    box-shadow: #000000;
+    cursor: pointer;
+    color: white;
+    font-size: 1.0rem;
+}
 
 /* ---------------------------------- HOME ------------------------------------- */
 
