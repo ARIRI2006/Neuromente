@@ -32,6 +32,11 @@ header {
     width: 90%;
 }
 
+.nav-item{
+    color: #fff;
+    font-weight: 600;
+}
+
 .nav-item a {
     color: #ffffff;
     font-weight: 600;
@@ -47,7 +52,7 @@ header {
 }
 
 #parte1 {
-    background-image: url("/IMG/fundo.jpg");
+    background-image: url("/IMG/fundo3.jpg");
     background-size: cover; /* Para cobrir toda a área do body */
     background-repeat: no-repeat; /* Para não repetir a imagem */
     background-color: #8b10dd;
@@ -75,8 +80,7 @@ header {
 }
 
 .get-relato{
-    background-color: white;
-    color: #000000;
+    color: #ffffff;
     margin-left: 5rem;
     display: flex;
     flex-direction: column;
