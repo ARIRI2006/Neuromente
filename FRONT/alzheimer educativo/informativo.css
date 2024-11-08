@@ -3,215 +3,263 @@
 
 /* Define estilos globais para todos os elementos */
 * {
-    /* Define a fonte Montserrat como a fonte padrão */
     font-family: "Montserrat", sans-serif;
-    /* Remove margens e paddings padrão */
     margin: 0;
     padding: 0;
-    /* Define o box-sizing como border-box para incluir bordas e paddings no tamanho do elemento */
     box-sizing: border-box;
 }
 
 /* Estilos para o cabeçalho */
 header {
-    /* Define a largura do cabeçalho como 100% da largura da página */
     width: 100%;
-    /* Define um gradiente de cor para o fundo do cabeçalho */
     background: linear-gradient(110deg, #5f3b79 0%, #241333 80%, #1a0c23 100%);
-    /* Adiciona padding ao cabeçalho */
     padding: 2rem 1rem;
 }
 
 /* Estilos para a barra de navegação */
 #navbar {
-    /* Define a largura da barra de navegação como 100% da largura da página */
     width: 100%;
-    /* Define a exibição da barra de navegação como flexível */
     display: flex;
-    /* Alinha os itens da barra de navegação ao centro */
     align-items: center;
-    /* Justifica os itens da barra de navegação ao centro */
     justify-content: center;
 }
 
 /* Estilos para o logotipo da barra de navegação */
 #nav_logo {
-    /* Define a altura do logotipo */
     height: 60px;
-    /* Adiciona uma margem à direita do logotipo */
     margin-right: 10%;
 }
 
 /* Estilos para os itens da barra de navegação */
 .nav-item {
-    /* Define a cor do texto dos itens da barra de navegação */
     color: #fff;
-    /* Define o peso do texto dos itens da barra de navegação */
     font-weight: 600;
 }
 
 /* Estilos para a lista de itens da barra de navegação */
 #nav_list {
-    /* Define a exibição da lista de itens da barra de navegação como flexível */
     display: flex;
-    /* Alinha os itens da lista ao centro */
     align-items: center;
-    /* Justifica os itens da lista ao centro */
     justify-content: space-between;
-    /* Remove a lista de itens da barra de navegação */
     list-style: none;
-    /* Define a largura da lista de itens da barra de navegação */
     width: 90%;
 }
 
 /* Estilos para o item selecionado da barra de navegação */
 #selected {
-    /* Adiciona uma borda inferior ao item selecionado */
     border-bottom: 1px solid white;
-    /* Adiciona um padding ao item selecionado */
     padding: 2px;
 }
 
 /* Estilos para os links da barra de navegação */
 .nav-item a {
-    /* Define a cor do texto dos links da barra de navegação */
     color: #ffffff;
-    /* Define o peso do texto dos links da barra de navegação */
     font-weight: 600;
-    /* Define o tamanho do texto dos links da barra de navegação */
     font-size: clamp(0.8rem, 1vw, 1.1rem);
-    /* Define a exibição dos links da barra de navegação como inline-block */
     display: inline-block;
-    /* Remove a decoração dos links da barra de navegação */
     text-decoration: none;
-    /* Define o cursor dos links da barra de navegação como um ponteiro */
     cursor: pointer;
 }
 
 /* Estilos para os links da barra de navegação ao passar o mouse */
 .nav-item a:hover {
-    /* Define a cor do texto dos links da barra de navegação ao passar o mouse */
     color: rgb(255, 255, 255);
-    /* Adiciona uma decoração de sublinhado aos links da barra de navegação ao passar o mouse */
     text-decoration: underline;
 }
 
 /* Estilos para o botão padrão */
 .btn-default {
-    /* Remove a decoração do botão padrão */
     text-decoration: none;
-    /* Remove a borda do botão padrão */
     border: none;
-    /* Define a exibição do botão padrão como flexível */
     display: flex;
 }
 
-/* Estilos para o rodapé */
-footer {
-    /* Define a cor de fundo do rodapé */
-    background-color: #333;
-    /* Define a cor do texto do rodapé */
-    color: #fff;
-    /* Adiciona padding ao rodapé */
-    padding: 40px 0;
-    /* Alinha o texto do rodapé ao centro */
-    text-align: center;
-}
-
-/* Estilos para o conteúdo do rodapé */
-.footer-content {
-    /* Adiciona padding ao conteúdo do rodapé */
-    padding: 20px;
-}
-
-/* Estilos para o topo do rodapé */
-.footer-top p {
-    /* Adiciona uma margem inferior ao parágrafo do topo do rodapé */
-    margin-bottom: 5vh;
-}
-
-/* Estilos para o fundo do rodapé */
-.footer-bottom {
-    /* Adiciona uma borda superior ao fundo do rodapé */
-    border-top: 1px solid #777;
-    /* Adiciona padding superior ao fundo do rodapé */
-    padding-top: 10px;
-    /* Define o tamanho da fonte do fundo do rodapé */
-    font-size: 0.9rem;
-}
-
-/* Estilos para o contêiner de vídeo */
-.video-container1 {
-    /* Define a exibição do contêiner de vídeo como flexível */
+/* Estilos para a seção de destaque */
+.alzheimer-destaque {
+    padding-top: 6rem;
     display: flex;
-    /* Justifica o contêiner de vídeo ao centro */
-    justify-content: center;
-}
-
-/* Estilos para a seção de produtos */
-.products {
-    /* Define a cor de fundo da seção de produtos */
-    background-color: #f7f7f7;
-    /* Adiciona padding à seção de produtos */
-    padding: 60px 0;
-    /* Adiciona uma margem superior à seção de produtos */
-    margin-top: 5vh;
-}
-
-/* Estilos para a grade de recursos */
-.feature-grid {
-    /* Define a exibição da grade de recursos como flexível */
-    display: flex;
-    /* Justifica a grade de recursos ao espaço entre */
     justify-content: space-between;
+    align-items: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 50%, #e6e6fa);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1200px;
 }
 
-/* Estilos para o item de recurso */
-.feature-item {
-    /* Define a cor de fundo do item de recurso */
+.alzheimer-destaque .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* Estilização do conteúdo textual */
+.alzheimer-destaque-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.alzheimer-destaque-content h1 {
+    font-size: 2.8rem;
+    color: #241333;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.alzheimer-destaque-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.alzheimer-destaque-content .btn {
+    padding: 0.8rem 1.8rem;
+    background-color: #6c5ce7;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.alzheimer-destaque-content .btn:hover {
+    background-color: #4b39c0;
+    transform: scale(1.05);
+}
+
+/* Estilização da imagem */
+.alzheimer-destaque-image {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alzheimer-destaque-image img {
+    width: 150%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.alzheimer-destaque-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Estágios da doença */
+.features {
+    padding: 4rem 2rem;
     background-color: #fff;
-    /* Adiciona padding ao item de recurso */
-    padding: 20px;
-    /* Alinha o texto do item de recurso ao centro */
+}
+
+.features h2 {
     text-align: center;
-    /* Define a borda do item de recurso */
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1 1 30%;
+    background-color: #fff;
     border-radius: 10px;
-    /* Adiciona uma sombra ao item de recurso */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Define a transição do item de recurso */
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilos para o item de recurso ao passar o mouse */
 .feature-item:hover {
-    /* Eleva o item de recurso ao passar o mouse */
     transform: translateY(-10px);
-    /* Aumenta a sombra do item de recurso ao passar o mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para o título do item de recurso */
-.feature-item h3 {
-    /* Define o tamanho da fonte do título do item de recurso */
-    font-size: 1.5rem;
-    /* Adiciona uma margem inferior ao título do item de recurso */
-    margin-bottom: 10px;
-    /* Define a transição do título do item de recurso */
-    transition: color 0.3s ease;
-}
-
-/* Estilos para o título do item de recurso ao passar o mouse */
-.feature-item:hover h3 {
-    /* Muda a cor do título do item de recurso ao passar o mouse */
-    color: #6c5ce7;
-}
-
-/* Estilos para a imagem do item de recurso */
 .feature-item img {
-    /* Define a largura máxima da imagem do item de recurso */
     max-width: 100%;
-    /* Define a borda da imagem do item de recurso */
     border-radius: 10px;
-    /* Adiciona uma margem inferior à imagem do item de recurso */
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item h3 {
+    font-size: 1.6rem;
+    color: #4b0082;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.prevenção{
+    display: flex;
+    justify-content: center;
+
+}
+/* Vídeo */
+.video-container1 {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.video-container1 iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.footer-top {
+    margin-bottom: 2rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #777;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #nav_list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .alzheimer-destaque {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .alzheimer-destaque-content {
+        max-width: 100%;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
+    }
 }

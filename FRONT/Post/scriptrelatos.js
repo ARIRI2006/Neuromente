@@ -7,7 +7,12 @@ const relatoForm = document.getElementById('RelatoForm');
 
 // Evento de clique no botão de adicionar relato para mostrar/esconder o formulário
 addRelatoBtn.addEventListener('click', () => {
-    relatoFormContainer.classList.toggle('show');
+    // Verifica se o formulário está visível
+    if (relatoFormContainer.style.display === 'none' || relatoFormContainer.style.display === '') {
+        relatoFormContainer.style.display = 'block';  // Exibe o formulário
+    } else {
+        relatoFormContainer.style.display = 'none';  // Esconde o formulário
+    }
 });
 
 // Evento de submissão do formulário para enviar o relato ao servidor
@@ -22,7 +27,7 @@ relatoForm.addEventListener('submit', async (e) => {
     const data = {
         nome,
         relato,
-    }
+    };
 
     // Envia os dados do relato ao servidor usando o método POST
     const response = await fetch(`http://localhost:3008/api/store/post`, {
@@ -129,3 +134,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+

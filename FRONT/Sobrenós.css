@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 1rem 5rem;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav_logo {
+    height: 60px;
+    margin-right: 10%;
+}
+
+#nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 90%;
+}
+
+.nav-item{
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-item a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#parte1 {
+    background-image: url("/IMG/fundo3.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: #8b10dd;
+    height: 108vh;
+}
+
+.btn-default {
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9153ed;
+    border-radius: 12px;
+    padding: 0.8rem 2.6rem;
+    font-weight: 600;
+    box-shadow: #000000;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: #be96f9;
+}
