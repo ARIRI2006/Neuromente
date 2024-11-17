@@ -1,19 +1,18 @@
 const mysql = require('mysql2');
-const dotenv = require('dotenv').config();
 
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'root',
+    database: process.env.DB_NAME || 'neuromente_db',
 });
 
-connection.connect(function(err) {
-  if(err){
-    throw err;
-  } else {
-    console.log('MySql conectado');
-  }
+connection.connect((err) => {
+    if (err) {
+        console.error('Erro ao conectar ao banco de dados:', err);
+        return;
+    }
+    console.log('Conectado ao banco de dados com sucesso!');
 });
 
 module.exports = connection;
